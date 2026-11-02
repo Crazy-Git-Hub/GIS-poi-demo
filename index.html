@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>我的第一个页面</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Microsoft YaHei", sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        #tip {
+            color: #00acf6;
+        }
+
+        button {
+            margin-top: 24px;
+            padding: 12px 28px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            background: #38bdf8;
+            color: #0f172a;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>加油，GIS</h1>
+    <p id="tip">这个页面是我自己写的。</p>
+    <button id="btn">试试再说</button>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const tip = document.getElementById("tip");
+        let count = 0;
+
+        btn.addEventListener("click", () => {
+            count = count + 1;
+            tip.textContent = "已经点了 " + count + " 次";
+        });
+    </script>
+</body>
+
+</html>
