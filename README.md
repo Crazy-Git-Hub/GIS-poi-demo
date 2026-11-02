@@ -4,7 +4,7 @@
 
 ## 在线预览
 
-https://github.com/Crazy-Git-Hub/GIS-poi-demo/settings/pages
+https://crazy-git-hub.github.io/GIS-poi-demo/
 
 ## 目前实现
 
@@ -23,3 +23,16 @@ https://github.com/Crazy-Git-Hub/GIS-poi-demo/settings/pages
 - 原生 JavaScript（ES6+）
 
 ## 目录结构
+
+```
+gis-poi-demo/
+├── index.html    # 页面结构、样式与脚本
+└── README.md     # 项目说明
+```
+
+## 下一步计划
+
+- [ ] 接入 OpenLayers，在地图上显示底图
+- [ ] 加载 POI 点位数据
+- [ ] 点击点位弹出信息窗
+- [ ] 框选查询与结果统计
